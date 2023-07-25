@@ -21,6 +21,7 @@ const Project: React.FC<Props> = ({ data }) => {
         y: 0,
         opacity: 1,
       }}
+      transition={{ delay: .15 }}
       key={data.keyword}
       className='backdrop-blur-md backdrop-brightness-125 hover:backdrop-brightness-[1.45] w-full my-3 p-7 cursor-pointer rounded-xl'
       style={{ cursor: 'pointer' }}
