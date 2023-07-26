@@ -1,5 +1,8 @@
+'use client'
+
 import React from 'react'
-import Image from 'next/image'
+import { XCircle } from 'lucide-react'
+import { motion } from 'framer-motion'
 
 interface Props {
     onClick: () => void
@@ -7,14 +10,13 @@ interface Props {
 
 const CrossButton = (props: Props) => {
     return (
-        <div className='border border-black w-fit p-2 rounded-full cursor-pointer' onClick={props.onClick}>
-            <Image
-                alt='Cross'
-                src="/close.svg"
-                height={20}
-                width={20}
-            />
-        </div>
+        <motion.div
+            className='w-fit p-2 rounded-full cursor-pointer'
+            onClick={props.onClick}
+            whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 1.1 }}>
+            <XCircle size={36} color="#4f46e5" />
+        </motion.div>
     )
 }
 

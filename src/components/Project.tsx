@@ -23,7 +23,7 @@ const Project: React.FC<Props> = ({ data }) => {
       }}
       transition={{ delay: .15 }}
       key={data.keyword}
-      className='backdrop-blur-md backdrop-brightness-125 hover:backdrop-brightness-[1.45] w-full my-3 p-7 cursor-pointer rounded-xl'
+      className='backdrop-blur-md backdrop-brightness-[1.20] hover:backdrop-brightness-[1.30] w-full my-3 p-7 cursor-pointer rounded-xl'
       style={{ cursor: 'pointer' }}
       onClick={() => {
         router.push(`projects/${data.keyword}`);
