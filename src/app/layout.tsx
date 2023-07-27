@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import NavBar from '@/components/NavBar'
 
-const roboto = Roboto({ subsets: ['latin'], weight: ['400'] })
+const roboto = Roboto({ subsets: ['latin'], weight: ['500'] })
 
 export const metadata: Metadata = {
   title: 'Arup Basak: Work',
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.className}`}>
+      <body className={`${roboto.className} text-green-950`}>
         <NavBar />
         {children}
       </body>

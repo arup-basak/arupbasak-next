@@ -35,7 +35,32 @@ const dataset: ProjectInterface[] = [
         "name": "Project 3",
         "keyword": "projectone",
         "desc": "Description of Project 3"
-    }
+    },
+    {
+        "name": "Project 4",
+        "keyword": "projectone",
+        "desc": "Description of Project 3"
+    },
+    {
+        "name": "Project 5",
+        "keyword": "projectone",
+        "desc": "Description of Project 3"
+    },
+    {
+        "name": "Project 6",
+        "keyword": "projectone",
+        "desc": "Description of Project 3"
+    },
+    {
+        "name": "Project 7",
+        "keyword": "projectone",
+        "desc": "Description of Project 3"
+    },
+    {
+        "name": "Project 8",
+        "keyword": "projectone",
+        "desc": "Description of Project 3"
+    },
 ]
 
 

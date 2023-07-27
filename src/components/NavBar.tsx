@@ -22,7 +22,7 @@ const NavBar = () => {
 
   return (
     <div className='w-fit m-auto'>
-      <div className='my-3 px-2 flex rounded-full backdrop-blur-md backdrop-brightness-105 transition'>
+      <div className='my-3 px-2 flex rounded-full backdrop-blur-lg backdrop-brightness-105 transition shadow-sm'>
         {buttons.map((button) => (
           <NavButton
             key={button.id}
