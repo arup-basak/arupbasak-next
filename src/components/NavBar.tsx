@@ -21,17 +21,19 @@ const NavBar = () => {
   }
 
   return (
-    <div className='w-fit m-auto'>
-      <div className='my-3 px-2 flex rounded-full backdrop-blur-lg backdrop-brightness-105 transition shadow-sm'>
-        {buttons.map((button) => (
-          <NavButton
-            key={button.id}
-            active={activeButton === button.id}
-            onClick={() => handleOnClick(button.id)}
-          >
-            {button.label}
-          </NavButton>
-        ))}
+    <div className='z-10 sticky top-0 w-full overflow-hidden'>
+      <div className='w-fit m-auto'>
+        <div className='my-3 px-2 flex rounded-full backdrop-blur-lg backdrop-brightness-105 transition shadow-sm'>
+          {buttons.map((button) => (
+            <NavButton
+              key={button.id}
+              active={activeButton === button.id}
+              onClick={() => handleOnClick(button.id)}
+            >
+              {button.label}
+            </NavButton>
+          ))}
+        </div>
       </div>
     </div>
   );

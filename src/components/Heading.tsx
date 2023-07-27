@@ -14,17 +14,18 @@ interface HeadingProps {
 
 const Sparkle = (props: { position: 'top' | 'bottom' }) => {
     return (
-        <div className={`mx-2 w-fit ${props.position === 'top' ? 'items-start justify-start' : 'items-end justify-end'}`}>
+        <div className={`flex mx-2 w-fit ${props.position === 'top' ? 'items-start' : 'items-end'}`}>
             <motion.div
                 className={`mx-2 w-fit h-fit`}
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
-                transition={{ delay: 0.5 }}>
+                transition={{ delay: 0.5 }}
+            >
                 <Sparkles size={36} color={'#4f46e5'} strokeWidth={3} />
             </motion.div>
         </div>
-    )
-}
+    );
+};
 
 
 const Heading: React.FC<HeadingProps> = ({ text }) => {
